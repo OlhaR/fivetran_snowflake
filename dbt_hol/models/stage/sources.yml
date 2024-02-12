@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: stg
+    database: DS_SANDBOX
+    schema: DBM_EXPORTS_STG
+    tables:
+      - name: OLIST_CUSTOMERS_DATASET
+      - name: OLIST_ORDER_ITEMS_DATASET
+      - name: OLIST_ORDERS_DATASET
+      - name: OLIST_ORDER_PAYMENTS_DATASET
+      - name: OLIST_PRODUCTS_DATASET
+      - name: PRODUCT_CATEGORY_NAME_TRANSLATION

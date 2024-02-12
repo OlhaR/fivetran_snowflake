@@ -1,0 +1,11 @@
+default:
+  outputs:
+    prod:
+      type: snowflake
+      account: "{{ env_var('DBT_PROFILE_ACCOUNT') }}"
+      user: "{{ env_var('DBT_PROFILE_USER') }}"
+      role: "{{ env_var('DBT_ROLE') }}"
+      password: "{{ env_var('DBT_PROFILE_PASSWORD') }}"
+      database: "{{ env_var('DBT_DATABASE') }}"
+      warehouse: "{{ env_var('DBT_WAREHOUSE') }}"
+      schema: "DBM_EXPORTS_STG"
